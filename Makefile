@@ -26,7 +26,7 @@ check.lint: check.prepare
 
 # check.test: execute go tests, if using test container set TEST_CONTAINER_FLAGS in custom.mk
 check.test: check.prepare
-	docker run --rm -v $(CURDIR):$(CURDIR) -w="$(CURDIR)" $(GOCACHE_FLAGS) $(TOOLS_DOCKER_IMAGE) sh -c 'go test -mod=vendor ./...'
+	docker run --rm -v $(CURDIR):$(CURDIR) -w="$(CURDIR)" $(GOCACHE_FLAGS) $(TOOLS_DOCKER_IMAGE) sh -c 'go mod vendor && go test -mod=vendor ./...'
 
 # checks if 
 check.diff:

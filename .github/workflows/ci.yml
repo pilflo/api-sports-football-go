@@ -30,5 +30,4 @@ jobs:
         make check.lint 
     - name: Go Unit Tests 
       run: | 
-        go mod vendor
         make check.test 
