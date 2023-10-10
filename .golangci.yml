@@ -1,0 +1,65 @@
+# Refer to golangci-lint's example config file for more options and information:
+# https://github.com/golangci/golangci-lint/blob/master/.golangci.example.yml
+
+run:
+  timeout: 5m
+  modules-download-mode: readonly
+  tests: false
+
+linters:
+  enable-all: true
+  disable-all: false
+  disable:
+    - exhaustruct #prevents passing struct with default values
+    - gochecknoglobals #annoying to create singleton stubs
+    - tagalign #optimizations not desired
+    - exhaustivestruct #deprecated
+    - interfacer #deprecated
+    - maligned #deprecated 
+    - scopelint #deprecated
+    - nosnakecase #deprecated
+    - ifshort #deprecated
+    - golint #deprecated
+    - structcheck #deprecated
+    - varcheck #deprecated
+    - deadcode #deprecated
+
+issues:
+  exclude-use-default: false
+  max-issues-per-linter: 0
+  max-same-issues: 0
+
+
+linters-settings:
+  cyclop:
+    max-complexity: 18
+  gocognit:
+    min-complexity: 18
+  gofumpt:
+    lang-version: '1.21'
+  govet:
+    enable-all: true
+    disable:
+      - fieldalignment
+  misspell:
+    locale: UK
+  lll:
+    line-length: 160
+  staticcheck:
+    go: '1.21'
+  stylecheck:
+    go: '1.21'
+  tagliatelle:
+    case:
+      rules:
+        json: snake 
+  unused:
+    go: '1.21'
+  depguard:
+    rules:
+      main:
+        allow:
+          - $gostd
+          - github.com/go-playground/validator/v10
+          - github.com/google/go-querystring/query
+
