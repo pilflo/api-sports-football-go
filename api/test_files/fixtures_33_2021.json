@@ -1,0 +1,3687 @@
+{
+    "get": "fixtures",
+    "parameters": {
+        "team": "33",
+        "season": "2021"
+    },
+    "errors": [],
+    "results": 54,
+    "paging": {
+        "current": 1,
+        "total": 1
+    },
+    "response": [
+        {
+            "fixture": {
+                "id": 710561,
+                "referee": "P. Tierney",
+                "timezone": "UTC",
+                "date": "2021-08-14T11:30:00+00:00",
+                "timestamp": 1628940600,
+                "periods": {
+                    "first": 1628940600,
+                    "second": 1628944200
+                },
+                "venue": {
+                    "id": 556,
+                    "name": "Old Trafford",
+                    "city": "Manchester"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 1"
+            },
+            "teams": {
+                "home": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": true
+                },
+                "away": {
+                    "id": 63,
+                    "name": "Leeds",
+                    "logo": "https://media-4.api-sports.io/football/teams/63.png",
+                    "winner": false
+                }
+            },
+            "goals": {
+                "home": 5,
+                "away": 1
+            },
+            "score": {
+                "halftime": {
+                    "home": 1,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 5,
+                    "away": 1
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710573,
+                "referee": "C. Pawson",
+                "timezone": "UTC",
+                "date": "2021-08-22T13:00:00+00:00",
+                "timestamp": 1629637200,
+                "periods": {
+                    "first": 1629637200,
+                    "second": 1629640800
+                },
+                "venue": {
+                    "id": 585,
+                    "name": "St. Mary's Stadium",
+                    "city": "Southampton, Hampshire"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 2"
+            },
+            "teams": {
+                "home": {
+                    "id": 41,
+                    "name": "Southampton",
+                    "logo": "https://media-4.api-sports.io/football/teams/41.png",
+                    "winner": null
+                },
+                "away": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": null
+                }
+            },
+            "goals": {
+                "home": 1,
+                "away": 1
+            },
+            "score": {
+                "halftime": {
+                    "home": 1,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 1,
+                    "away": 1
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710585,
+                "referee": "M. Dean",
+                "timezone": "UTC",
+                "date": "2021-08-29T15:30:00+00:00",
+                "timestamp": 1630251000,
+                "periods": {
+                    "first": 1630251000,
+                    "second": 1630254600
+                },
+                "venue": {
+                    "id": 600,
+                    "name": "Molineux Stadium",
+                    "city": "Wolverhampton, West Midlands"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 3"
+            },
+            "teams": {
+                "home": {
+                    "id": 39,
+                    "name": "Wolves",
+                    "logo": "https://media-4.api-sports.io/football/teams/39.png",
+                    "winner": false
+                },
+                "away": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": true
+                }
+            },
+            "goals": {
+                "home": 0,
+                "away": 1
+            },
+            "score": {
+                "halftime": {
+                    "home": 0,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 0,
+                    "away": 1
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710593,
+                "referee": "A. Taylor",
+                "timezone": "UTC",
+                "date": "2021-09-11T14:00:00+00:00",
+                "timestamp": 1631368800,
+                "periods": {
+                    "first": 1631368800,
+                    "second": 1631372400
+                },
+                "venue": {
+                    "id": 556,
+                    "name": "Old Trafford",
+                    "city": "Manchester"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 4"
+            },
+            "teams": {
+                "home": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": true
+                },
+                "away": {
+                    "id": 34,
+                    "name": "Newcastle",
+                    "logo": "https://media-4.api-sports.io/football/teams/34.png",
+                    "winner": false
+                }
+            },
+            "goals": {
+                "home": 4,
+                "away": 1
+            },
+            "score": {
+                "halftime": {
+                    "home": 1,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 4,
+                    "away": 1
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710604,
+                "referee": "M. Atkinson",
+                "timezone": "UTC",
+                "date": "2021-09-19T13:00:00+00:00",
+                "timestamp": 1632056400,
+                "periods": {
+                    "first": 1632056400,
+                    "second": 1632060000
+                },
+                "venue": {
+                    "id": 598,
+                    "name": "London Stadium",
+                    "city": "London"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 5"
+            },
+            "teams": {
+                "home": {
+                    "id": 48,
+                    "name": "West Ham",
+                    "logo": "https://media-4.api-sports.io/football/teams/48.png",
+                    "winner": false
+                },
+                "away": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": true
+                }
+            },
+            "goals": {
+                "home": 1,
+                "away": 2
+            },
+            "score": {
+                "halftime": {
+                    "home": 1,
+                    "away": 1
+                },
+                "fulltime": {
+                    "home": 1,
+                    "away": 2
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710613,
+                "referee": "M. Dean",
+                "timezone": "UTC",
+                "date": "2021-09-25T11:30:00+00:00",
+                "timestamp": 1632569400,
+                "periods": {
+                    "first": 1632569400,
+                    "second": 1632573000
+                },
+                "venue": {
+                    "id": 556,
+                    "name": "Old Trafford",
+                    "city": "Manchester"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 6"
+            },
+            "teams": {
+                "home": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": false
+                },
+                "away": {
+                    "id": 66,
+                    "name": "Aston Villa",
+                    "logo": "https://media-4.api-sports.io/football/teams/66.png",
+                    "winner": true
+                }
+            },
+            "goals": {
+                "home": 0,
+                "away": 1
+            },
+            "score": {
+                "halftime": {
+                    "home": 0,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 0,
+                    "away": 1
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710622,
+                "referee": "M. Oliver",
+                "timezone": "UTC",
+                "date": "2021-10-02T11:30:00+00:00",
+                "timestamp": 1633174200,
+                "periods": {
+                    "first": 1633174200,
+                    "second": 1633177800
+                },
+                "venue": {
+                    "id": 556,
+                    "name": "Old Trafford",
+                    "city": "Manchester"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 7"
+            },
+            "teams": {
+                "home": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": null
+                },
+                "away": {
+                    "id": 45,
+                    "name": "Everton",
+                    "logo": "https://media-4.api-sports.io/football/teams/45.png",
+                    "winner": null
+                }
+            },
+            "goals": {
+                "home": 1,
+                "away": 1
+            },
+            "score": {
+                "halftime": {
+                    "home": 1,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 1,
+                    "away": 1
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710630,
+                "referee": "C. Pawson",
+                "timezone": "UTC",
+                "date": "2021-10-16T14:00:00+00:00",
+                "timestamp": 1634392800,
+                "periods": {
+                    "first": 1634392800,
+                    "second": 1634396400
+                },
+                "venue": {
+                    "id": 547,
+                    "name": "King Power Stadium",
+                    "city": "Leicester, Leicestershire"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 8"
+            },
+            "teams": {
+                "home": {
+                    "id": 46,
+                    "name": "Leicester",
+                    "logo": "https://media-4.api-sports.io/football/teams/46.png",
+                    "winner": true
+                },
+                "away": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": false
+                }
+            },
+            "goals": {
+                "home": 4,
+                "away": 2
+            },
+            "score": {
+                "halftime": {
+                    "home": 1,
+                    "away": 1
+                },
+                "fulltime": {
+                    "home": 4,
+                    "away": 2
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710643,
+                "referee": "A. Taylor",
+                "timezone": "UTC",
+                "date": "2021-10-24T15:30:00+00:00",
+                "timestamp": 1635089400,
+                "periods": {
+                    "first": 1635089400,
+                    "second": 1635093000
+                },
+                "venue": {
+                    "id": 556,
+                    "name": "Old Trafford",
+                    "city": "Manchester"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 9"
+            },
+            "teams": {
+                "home": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": false
+                },
+                "away": {
+                    "id": 40,
+                    "name": "Liverpool",
+                    "logo": "https://media-4.api-sports.io/football/teams/40.png",
+                    "winner": true
+                }
+            },
+            "goals": {
+                "home": 0,
+                "away": 5
+            },
+            "score": {
+                "halftime": {
+                    "home": 0,
+                    "away": 4
+                },
+                "fulltime": {
+                    "home": 0,
+                    "away": 5
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710653,
+                "referee": "S. Attwell",
+                "timezone": "UTC",
+                "date": "2021-10-30T16:30:00+00:00",
+                "timestamp": 1635611400,
+                "periods": {
+                    "first": 1635611400,
+                    "second": 1635615000
+                },
+                "venue": {
+                    "id": 593,
+                    "name": "Tottenham Hotspur Stadium",
+                    "city": "London"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 10"
+            },
+            "teams": {
+                "home": {
+                    "id": 47,
+                    "name": "Tottenham",
+                    "logo": "https://media-4.api-sports.io/football/teams/47.png",
+                    "winner": false
+                },
+                "away": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": true
+                }
+            },
+            "goals": {
+                "home": 0,
+                "away": 3
+            },
+            "score": {
+                "halftime": {
+                    "home": 0,
+                    "away": 1
+                },
+                "fulltime": {
+                    "home": 0,
+                    "away": 3
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710663,
+                "referee": "M. Oliver",
+                "timezone": "UTC",
+                "date": "2021-11-06T12:30:00+00:00",
+                "timestamp": 1636201800,
+                "periods": {
+                    "first": 1636201800,
+                    "second": 1636205400
+                },
+                "venue": {
+                    "id": 556,
+                    "name": "Old Trafford",
+                    "city": "Manchester"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 11"
+            },
+            "teams": {
+                "home": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": false
+                },
+                "away": {
+                    "id": 50,
+                    "name": "Manchester City",
+                    "logo": "https://media-4.api-sports.io/football/teams/50.png",
+                    "winner": true
+                }
+            },
+            "goals": {
+                "home": 0,
+                "away": 2
+            },
+            "score": {
+                "halftime": {
+                    "home": 0,
+                    "away": 2
+                },
+                "fulltime": {
+                    "home": 0,
+                    "away": 2
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710674,
+                "referee": "J. Moss",
+                "timezone": "UTC",
+                "date": "2021-11-20T15:00:00+00:00",
+                "timestamp": 1637420400,
+                "periods": {
+                    "first": 1637420400,
+                    "second": 1637424000
+                },
+                "venue": {
+                    "id": 596,
+                    "name": "Vicarage Road",
+                    "city": "Watford"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 12"
+            },
+            "teams": {
+                "home": {
+                    "id": 38,
+                    "name": "Watford",
+                    "logo": "https://media-4.api-sports.io/football/teams/38.png",
+                    "winner": true
+                },
+                "away": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": false
+                }
+            },
+            "goals": {
+                "home": 4,
+                "away": 1
+            },
+            "score": {
+                "halftime": {
+                    "home": 2,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 4,
+                    "away": 1
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710680,
+                "referee": "A. Taylor",
+                "timezone": "UTC",
+                "date": "2021-11-28T16:30:00+00:00",
+                "timestamp": 1638117000,
+                "periods": {
+                    "first": 1638117000,
+                    "second": 1638120600
+                },
+                "venue": {
+                    "id": 519,
+                    "name": "Stamford Bridge",
+                    "city": "London"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 13"
+            },
+            "teams": {
+                "home": {
+                    "id": 49,
+                    "name": "Chelsea",
+                    "logo": "https://media-4.api-sports.io/football/teams/49.png",
+                    "winner": null
+                },
+                "away": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": null
+                }
+            },
+            "goals": {
+                "home": 1,
+                "away": 1
+            },
+            "score": {
+                "halftime": {
+                    "home": 0,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 1,
+                    "away": 1
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710692,
+                "referee": "M. Atkinson",
+                "timezone": "UTC",
+                "date": "2021-12-02T20:15:00+00:00",
+                "timestamp": 1638476100,
+                "periods": {
+                    "first": 1638476100,
+                    "second": 1638479700
+                },
+                "venue": {
+                    "id": 556,
+                    "name": "Old Trafford",
+                    "city": "Manchester"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 14"
+            },
+            "teams": {
+                "home": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": true
+                },
+                "away": {
+                    "id": 42,
+                    "name": "Arsenal",
+                    "logo": "https://media-4.api-sports.io/football/teams/42.png",
+                    "winner": false
+                }
+            },
+            "goals": {
+                "home": 3,
+                "away": 2
+            },
+            "score": {
+                "halftime": {
+                    "home": 1,
+                    "away": 1
+                },
+                "fulltime": {
+                    "home": 3,
+                    "away": 2
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710699,
+                "referee": "C. Pawson",
+                "timezone": "UTC",
+                "date": "2021-12-05T14:00:00+00:00",
+                "timestamp": 1638712800,
+                "periods": {
+                    "first": 1638712800,
+                    "second": 1638716400
+                },
+                "venue": {
+                    "id": 556,
+                    "name": "Old Trafford",
+                    "city": "Manchester"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 15"
+            },
+            "teams": {
+                "home": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": true
+                },
+                "away": {
+                    "id": 52,
+                    "name": "Crystal Palace",
+                    "logo": "https://media-4.api-sports.io/football/teams/52.png",
+                    "winner": false
+                }
+            },
+            "goals": {
+                "home": 1,
+                "away": 0
+            },
+            "score": {
+                "halftime": {
+                    "home": 0,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 1,
+                    "away": 0
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710715,
+                "referee": "D. England",
+                "timezone": "UTC",
+                "date": "2021-12-11T17:30:00+00:00",
+                "timestamp": 1639243800,
+                "periods": {
+                    "first": 1639243800,
+                    "second": 1639247400
+                },
+                "venue": {
+                    "id": 565,
+                    "name": "Carrow Road",
+                    "city": "Norwich, Norfolk"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 16"
+            },
+            "teams": {
+                "home": {
+                    "id": 71,
+                    "name": "Norwich",
+                    "logo": "https://media-4.api-sports.io/football/teams/71.png",
+                    "winner": false
+                },
+                "away": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": true
+                }
+            },
+            "goals": {
+                "home": 0,
+                "away": 1
+            },
+            "score": {
+                "halftime": {
+                    "home": 0,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 0,
+                    "away": 1
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710717,
+                "referee": "A. Marriner",
+                "timezone": "UTC",
+                "date": "2022-01-19T20:00:00+00:00",
+                "timestamp": 1642622400,
+                "periods": {
+                    "first": 1642622400,
+                    "second": 1642626000
+                },
+                "venue": {
+                    "id": 10503,
+                    "name": "Brentford Community Stadium",
+                    "city": "Brentford, Middlesex"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 17"
+            },
+            "teams": {
+                "home": {
+                    "id": 55,
+                    "name": "Brentford",
+                    "logo": "https://media-4.api-sports.io/football/teams/55.png",
+                    "winner": false
+                },
+                "away": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": true
+                }
+            },
+            "goals": {
+                "home": 1,
+                "away": 3
+            },
+            "score": {
+                "halftime": {
+                    "home": 0,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 1,
+                    "away": 3
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710729,
+                "referee": "P. Bankes",
+                "timezone": "UTC",
+                "date": "2022-02-15T20:15:00+00:00",
+                "timestamp": 1644956100,
+                "periods": {
+                    "first": 1644956100,
+                    "second": 1644959700
+                },
+                "venue": {
+                    "id": 556,
+                    "name": "Old Trafford",
+                    "city": "Manchester"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 18"
+            },
+            "teams": {
+                "home": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": true
+                },
+                "away": {
+                    "id": 51,
+                    "name": "Brighton",
+                    "logo": "https://media-4.api-sports.io/football/teams/51.png",
+                    "winner": false
+                }
+            },
+            "goals": {
+                "home": 2,
+                "away": 0
+            },
+            "score": {
+                "halftime": {
+                    "home": 0,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 2,
+                    "away": 0
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710741,
+                "referee": "C. Pawson",
+                "timezone": "UTC",
+                "date": "2021-12-27T20:00:00+00:00",
+                "timestamp": 1640635200,
+                "periods": {
+                    "first": 1640635200,
+                    "second": 1640638800
+                },
+                "venue": {
+                    "id": 562,
+                    "name": "St. James' Park",
+                    "city": "Newcastle upon Tyne"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 19"
+            },
+            "teams": {
+                "home": {
+                    "id": 34,
+                    "name": "Newcastle",
+                    "logo": "https://media-4.api-sports.io/football/teams/34.png",
+                    "winner": null
+                },
+                "away": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": null
+                }
+            },
+            "goals": {
+                "home": 1,
+                "away": 1
+            },
+            "score": {
+                "halftime": {
+                    "home": 1,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 1,
+                    "away": 1
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710753,
+                "referee": "J. Moss",
+                "timezone": "UTC",
+                "date": "2021-12-30T20:15:00+00:00",
+                "timestamp": 1640895300,
+                "periods": {
+                    "first": 1640895300,
+                    "second": 1640898900
+                },
+                "venue": {
+                    "id": 556,
+                    "name": "Old Trafford",
+                    "city": "Manchester"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 20"
+            },
+            "teams": {
+                "home": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": true
+                },
+                "away": {
+                    "id": 44,
+                    "name": "Burnley",
+                    "logo": "https://media-4.api-sports.io/football/teams/44.png",
+                    "winner": false
+                }
+            },
+            "goals": {
+                "home": 3,
+                "away": 1
+            },
+            "score": {
+                "halftime": {
+                    "home": 3,
+                    "away": 1
+                },
+                "fulltime": {
+                    "home": 3,
+                    "away": 1
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710763,
+                "referee": "M. Dean",
+                "timezone": "UTC",
+                "date": "2022-01-03T17:30:00+00:00",
+                "timestamp": 1641231000,
+                "periods": {
+                    "first": 1641231000,
+                    "second": 1641234600
+                },
+                "venue": {
+                    "id": 556,
+                    "name": "Old Trafford",
+                    "city": "Manchester"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 21"
+            },
+            "teams": {
+                "home": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": false
+                },
+                "away": {
+                    "id": 39,
+                    "name": "Wolves",
+                    "logo": "https://media-4.api-sports.io/football/teams/39.png",
+                    "winner": true
+                }
+            },
+            "goals": {
+                "home": 0,
+                "away": 1
+            },
+            "score": {
+                "halftime": {
+                    "home": 0,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 0,
+                    "away": 1
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710766,
+                "referee": "D. Coote",
+                "timezone": "UTC",
+                "date": "2022-01-15T17:30:00+00:00",
+                "timestamp": 1642267800,
+                "periods": {
+                    "first": 1642267800,
+                    "second": 1642271400
+                },
+                "venue": {
+                    "id": 495,
+                    "name": "Villa Park",
+                    "city": "Birmingham"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 22"
+            },
+            "teams": {
+                "home": {
+                    "id": 66,
+                    "name": "Aston Villa",
+                    "logo": "https://media-4.api-sports.io/football/teams/66.png",
+                    "winner": null
+                },
+                "away": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": null
+                }
+            },
+            "goals": {
+                "home": 2,
+                "away": 2
+            },
+            "score": {
+                "halftime": {
+                    "home": 0,
+                    "away": 1
+                },
+                "fulltime": {
+                    "home": 2,
+                    "away": 2
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710783,
+                "referee": "J. Moss",
+                "timezone": "UTC",
+                "date": "2022-01-22T15:00:00+00:00",
+                "timestamp": 1642863600,
+                "periods": {
+                    "first": 1642863600,
+                    "second": 1642867200
+                },
+                "venue": {
+                    "id": 556,
+                    "name": "Old Trafford",
+                    "city": "Manchester"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 23"
+            },
+            "teams": {
+                "home": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": true
+                },
+                "away": {
+                    "id": 48,
+                    "name": "West Ham",
+                    "logo": "https://media-4.api-sports.io/football/teams/48.png",
+                    "winner": false
+                }
+            },
+            "goals": {
+                "home": 1,
+                "away": 0
+            },
+            "score": {
+                "halftime": {
+                    "home": 0,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 1,
+                    "away": 0
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710788,
+                "referee": "M. Dean",
+                "timezone": "UTC",
+                "date": "2022-02-08T20:00:00+00:00",
+                "timestamp": 1644350400,
+                "periods": {
+                    "first": 1644350400,
+                    "second": 1644354000
+                },
+                "venue": {
+                    "id": 512,
+                    "name": "Turf Moor",
+                    "city": "Burnley"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 24"
+            },
+            "teams": {
+                "home": {
+                    "id": 44,
+                    "name": "Burnley",
+                    "logo": "https://media-4.api-sports.io/football/teams/44.png",
+                    "winner": null
+                },
+                "away": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": null
+                }
+            },
+            "goals": {
+                "home": 1,
+                "away": 1
+            },
+            "score": {
+                "halftime": {
+                    "home": 0,
+                    "away": 1
+                },
+                "fulltime": {
+                    "home": 1,
+                    "away": 1
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710801,
+                "referee": "S. Attwell",
+                "timezone": "UTC",
+                "date": "2022-02-12T12:30:00+00:00",
+                "timestamp": 1644669000,
+                "periods": {
+                    "first": 1644669000,
+                    "second": 1644672600
+                },
+                "venue": {
+                    "id": 556,
+                    "name": "Old Trafford",
+                    "city": "Manchester"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 25"
+            },
+            "teams": {
+                "home": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": null
+                },
+                "away": {
+                    "id": 41,
+                    "name": "Southampton",
+                    "logo": "https://media-4.api-sports.io/football/teams/41.png",
+                    "winner": null
+                }
+            },
+            "goals": {
+                "home": 1,
+                "away": 1
+            },
+            "score": {
+                "halftime": {
+                    "home": 1,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 1,
+                    "away": 1
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710810,
+                "referee": "P. Tierney",
+                "timezone": "UTC",
+                "date": "2022-02-20T14:00:00+00:00",
+                "timestamp": 1645365600,
+                "periods": {
+                    "first": 1645365600,
+                    "second": 1645369200
+                },
+                "venue": {
+                    "id": 546,
+                    "name": "Elland Road",
+                    "city": "Leeds, West Yorkshire"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 26"
+            },
+            "teams": {
+                "home": {
+                    "id": 63,
+                    "name": "Leeds",
+                    "logo": "https://media-4.api-sports.io/football/teams/63.png",
+                    "winner": false
+                },
+                "away": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": true
+                }
+            },
+            "goals": {
+                "home": 2,
+                "away": 4
+            },
+            "score": {
+                "halftime": {
+                    "home": 0,
+                    "away": 2
+                },
+                "fulltime": {
+                    "home": 2,
+                    "away": 4
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710823,
+                "referee": "K. Friend",
+                "timezone": "UTC",
+                "date": "2022-02-26T15:00:00+00:00",
+                "timestamp": 1645887600,
+                "periods": {
+                    "first": 1645887600,
+                    "second": 1645891200
+                },
+                "venue": {
+                    "id": 556,
+                    "name": "Old Trafford",
+                    "city": "Manchester"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 27"
+            },
+            "teams": {
+                "home": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": null
+                },
+                "away": {
+                    "id": 38,
+                    "name": "Watford",
+                    "logo": "https://media-4.api-sports.io/football/teams/38.png",
+                    "winner": null
+                }
+            },
+            "goals": {
+                "home": 0,
+                "away": 0
+            },
+            "score": {
+                "halftime": {
+                    "home": 0,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 0,
+                    "away": 0
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710830,
+                "referee": "M. Oliver",
+                "timezone": "UTC",
+                "date": "2022-03-06T16:30:00+00:00",
+                "timestamp": 1646584200,
+                "periods": {
+                    "first": 1646584200,
+                    "second": 1646587800
+                },
+                "venue": {
+                    "id": 555,
+                    "name": "Etihad Stadium",
+                    "city": "Manchester"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 28"
+            },
+            "teams": {
+                "home": {
+                    "id": 50,
+                    "name": "Manchester City",
+                    "logo": "https://media-4.api-sports.io/football/teams/50.png",
+                    "winner": true
+                },
+                "away": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": false
+                }
+            },
+            "goals": {
+                "home": 4,
+                "away": 1
+            },
+            "score": {
+                "halftime": {
+                    "home": 2,
+                    "away": 1
+                },
+                "fulltime": {
+                    "home": 4,
+                    "away": 1
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710843,
+                "referee": "J. Moss",
+                "timezone": "UTC",
+                "date": "2022-03-12T17:30:00+00:00",
+                "timestamp": 1647106200,
+                "periods": {
+                    "first": 1647106200,
+                    "second": 1647109800
+                },
+                "venue": {
+                    "id": 556,
+                    "name": "Old Trafford",
+                    "city": "Manchester"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 29"
+            },
+            "teams": {
+                "home": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": true
+                },
+                "away": {
+                    "id": 47,
+                    "name": "Tottenham",
+                    "logo": "https://media-4.api-sports.io/football/teams/47.png",
+                    "winner": false
+                }
+            },
+            "goals": {
+                "home": 3,
+                "away": 2
+            },
+            "score": {
+                "halftime": {
+                    "home": 2,
+                    "away": 1
+                },
+                "fulltime": {
+                    "home": 3,
+                    "away": 2
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710849,
+                "referee": "M. Atkinson",
+                "timezone": "UTC",
+                "date": "2022-04-19T19:00:00+00:00",
+                "timestamp": 1650394800,
+                "periods": {
+                    "first": 1650394800,
+                    "second": 1650398400
+                },
+                "venue": {
+                    "id": 550,
+                    "name": "Anfield",
+                    "city": "Liverpool"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 30"
+            },
+            "teams": {
+                "home": {
+                    "id": 40,
+                    "name": "Liverpool",
+                    "logo": "https://media-4.api-sports.io/football/teams/40.png",
+                    "winner": true
+                },
+                "away": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": false
+                }
+            },
+            "goals": {
+                "home": 4,
+                "away": 0
+            },
+            "score": {
+                "halftime": {
+                    "home": 2,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 4,
+                    "away": 0
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710862,
+                "referee": "A. Marriner",
+                "timezone": "UTC",
+                "date": "2022-04-02T16:30:00+00:00",
+                "timestamp": 1648917000,
+                "periods": {
+                    "first": 1648917000,
+                    "second": 1648920600
+                },
+                "venue": {
+                    "id": 556,
+                    "name": "Old Trafford",
+                    "city": "Manchester"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 31"
+            },
+            "teams": {
+                "home": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": null
+                },
+                "away": {
+                    "id": 46,
+                    "name": "Leicester",
+                    "logo": "https://media-4.api-sports.io/football/teams/46.png",
+                    "winner": null
+                }
+            },
+            "goals": {
+                "home": 1,
+                "away": 1
+            },
+            "score": {
+                "halftime": {
+                    "home": 0,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 1,
+                    "away": 1
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710869,
+                "referee": "J. Moss",
+                "timezone": "UTC",
+                "date": "2022-04-09T11:30:00+00:00",
+                "timestamp": 1649503800,
+                "periods": {
+                    "first": 1649503800,
+                    "second": 1649507400
+                },
+                "venue": {
+                    "id": 8560,
+                    "name": "Goodison Park",
+                    "city": "Liverpool"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 32"
+            },
+            "teams": {
+                "home": {
+                    "id": 45,
+                    "name": "Everton",
+                    "logo": "https://media-4.api-sports.io/football/teams/45.png",
+                    "winner": true
+                },
+                "away": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": false
+                }
+            },
+            "goals": {
+                "home": 1,
+                "away": 0
+            },
+            "score": {
+                "halftime": {
+                    "home": 1,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 1,
+                    "away": 0
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710879,
+                "referee": "A. Madley",
+                "timezone": "UTC",
+                "date": "2022-04-16T14:00:00+00:00",
+                "timestamp": 1650117600,
+                "periods": {
+                    "first": 1650117600,
+                    "second": 1650121200
+                },
+                "venue": {
+                    "id": 556,
+                    "name": "Old Trafford",
+                    "city": "Manchester"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 33"
+            },
+            "teams": {
+                "home": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": true
+                },
+                "away": {
+                    "id": 71,
+                    "name": "Norwich",
+                    "logo": "https://media-4.api-sports.io/football/teams/71.png",
+                    "winner": false
+                }
+            },
+            "goals": {
+                "home": 3,
+                "away": 2
+            },
+            "score": {
+                "halftime": {
+                    "home": 2,
+                    "away": 1
+                },
+                "fulltime": {
+                    "home": 3,
+                    "away": 2
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710886,
+                "referee": "C. Pawson",
+                "timezone": "UTC",
+                "date": "2022-04-23T11:30:00+00:00",
+                "timestamp": 1650713400,
+                "periods": {
+                    "first": 1650713400,
+                    "second": 1650717000
+                },
+                "venue": {
+                    "id": 494,
+                    "name": "Emirates Stadium",
+                    "city": "London"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 34"
+            },
+            "teams": {
+                "home": {
+                    "id": 42,
+                    "name": "Arsenal",
+                    "logo": "https://media-4.api-sports.io/football/teams/42.png",
+                    "winner": true
+                },
+                "away": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": false
+                }
+            },
+            "goals": {
+                "home": 3,
+                "away": 1
+            },
+            "score": {
+                "halftime": {
+                    "home": 2,
+                    "away": 1
+                },
+                "fulltime": {
+                    "home": 3,
+                    "away": 1
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710899,
+                "referee": "C. Kavanagh",
+                "timezone": "UTC",
+                "date": "2022-05-02T19:00:00+00:00",
+                "timestamp": 1651518000,
+                "periods": {
+                    "first": 1651518000,
+                    "second": 1651521600
+                },
+                "venue": {
+                    "id": 556,
+                    "name": "Old Trafford",
+                    "city": "Manchester"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 35"
+            },
+            "teams": {
+                "home": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": true
+                },
+                "away": {
+                    "id": 55,
+                    "name": "Brentford",
+                    "logo": "https://media-4.api-sports.io/football/teams/55.png",
+                    "winner": false
+                }
+            },
+            "goals": {
+                "home": 3,
+                "away": 0
+            },
+            "score": {
+                "halftime": {
+                    "home": 1,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 3,
+                    "away": 0
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710908,
+                "referee": "A. Madley",
+                "timezone": "UTC",
+                "date": "2022-05-07T16:30:00+00:00",
+                "timestamp": 1651941000,
+                "periods": {
+                    "first": 1651941000,
+                    "second": 1651944600
+                },
+                "venue": {
+                    "id": 508,
+                    "name": "The American Express Community Stadium",
+                    "city": "Falmer, East Sussex"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 36"
+            },
+            "teams": {
+                "home": {
+                    "id": 51,
+                    "name": "Brighton",
+                    "logo": "https://media-4.api-sports.io/football/teams/51.png",
+                    "winner": true
+                },
+                "away": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": false
+                }
+            },
+            "goals": {
+                "home": 4,
+                "away": 0
+            },
+            "score": {
+                "halftime": {
+                    "home": 1,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 4,
+                    "away": 0
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710919,
+                "referee": "M. Dean",
+                "timezone": "UTC",
+                "date": "2022-04-28T18:45:00+00:00",
+                "timestamp": 1651171500,
+                "periods": {
+                    "first": 1651171500,
+                    "second": 1651175100
+                },
+                "venue": {
+                    "id": 556,
+                    "name": "Old Trafford",
+                    "city": "Manchester"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 37"
+            },
+            "teams": {
+                "home": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": null
+                },
+                "away": {
+                    "id": 49,
+                    "name": "Chelsea",
+                    "logo": "https://media-4.api-sports.io/football/teams/49.png",
+                    "winner": null
+                }
+            },
+            "goals": {
+                "home": 1,
+                "away": 1
+            },
+            "score": {
+                "halftime": {
+                    "home": 0,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 1,
+                    "away": 1
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 710931,
+                "referee": "M. Atkinson",
+                "timezone": "UTC",
+                "date": "2022-05-22T15:00:00+00:00",
+                "timestamp": 1653231600,
+                "periods": {
+                    "first": 1653231600,
+                    "second": 1653235200
+                },
+                "venue": {
+                    "id": 525,
+                    "name": "Selhurst Park",
+                    "city": "London"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "Regular Season - 38"
+            },
+            "teams": {
+                "home": {
+                    "id": 52,
+                    "name": "Crystal Palace",
+                    "logo": "https://media-4.api-sports.io/football/teams/52.png",
+                    "winner": true
+                },
+                "away": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": false
+                }
+            },
+            "goals": {
+                "home": 1,
+                "away": 0
+            },
+            "score": {
+                "halftime": {
+                    "home": 1,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 1,
+                    "away": 0
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 736014,
+                "referee": "R. Jones",
+                "timezone": "UTC",
+                "date": "2021-07-18T12:00:00+00:00",
+                "timestamp": 1626609600,
+                "periods": {
+                    "first": 1626609600,
+                    "second": 1626613200
+                },
+                "venue": {
+                    "id": 527,
+                    "name": "Pride Park Stadium",
+                    "city": "Derby"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 667,
+                "name": "Friendlies Clubs",
+                "country": "World",
+                "logo": "https://media-4.api-sports.io/football/leagues/667.png",
+                "flag": null,
+                "season": 2021,
+                "round": "Club Friendlies 1"
+            },
+            "teams": {
+                "home": {
+                    "id": 69,
+                    "name": "Derby",
+                    "logo": "https://media-4.api-sports.io/football/teams/69.png",
+                    "winner": false
+                },
+                "away": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": true
+                }
+            },
+            "goals": {
+                "home": 1,
+                "away": 2
+            },
+            "score": {
+                "halftime": {
+                    "home": 0,
+                    "away": 1
+                },
+                "fulltime": {
+                    "home": 1,
+                    "away": 2
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 736023,
+                "referee": "G. Ward",
+                "timezone": "UTC",
+                "date": "2021-07-24T14:00:00+00:00",
+                "timestamp": 1627135200,
+                "periods": {
+                    "first": 1627135200,
+                    "second": 1627138800
+                },
+                "venue": {
+                    "id": 575,
+                    "name": "Kiyan Prince Foundation Stadium",
+                    "city": "London"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 667,
+                "name": "Friendlies Clubs",
+                "country": "World",
+                "logo": "https://media-4.api-sports.io/football/leagues/667.png",
+                "flag": null,
+                "season": 2021,
+                "round": "Club Friendlies 1"
+            },
+            "teams": {
+                "home": {
+                    "id": 72,
+                    "name": "QPR",
+                    "logo": "https://media-4.api-sports.io/football/teams/72.png",
+                    "winner": true
+                },
+                "away": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": false
+                }
+            },
+            "goals": {
+                "home": 4,
+                "away": 2
+            },
+            "score": {
+                "halftime": {
+                    "home": 1,
+                    "away": 1
+                },
+                "fulltime": {
+                    "home": 4,
+                    "away": 2
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 736034,
+                "referee": "C. Pawson",
+                "timezone": "UTC",
+                "date": "2021-07-28T19:00:00+00:00",
+                "timestamp": 1627498800,
+                "periods": {
+                    "first": 1627498800,
+                    "second": 1627502400
+                },
+                "venue": {
+                    "id": 556,
+                    "name": "Old Trafford",
+                    "city": "Manchester"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 667,
+                "name": "Friendlies Clubs",
+                "country": "World",
+                "logo": "https://media-4.api-sports.io/football/leagues/667.png",
+                "flag": null,
+                "season": 2021,
+                "round": "Club Friendlies 1"
+            },
+            "teams": {
+                "home": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": null
+                },
+                "away": {
+                    "id": 55,
+                    "name": "Brentford",
+                    "logo": "https://media-4.api-sports.io/football/teams/55.png",
+                    "winner": null
+                }
+            },
+            "goals": {
+                "home": 2,
+                "away": 2
+            },
+            "score": {
+                "halftime": {
+                    "home": 1,
+                    "away": 1
+                },
+                "fulltime": {
+                    "home": 2,
+                    "away": 2
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 736037,
+                "referee": null,
+                "timezone": "UTC",
+                "date": "2021-07-31T13:00:00+00:00",
+                "timestamp": 1627736400,
+                "periods": {
+                    "first": null,
+                    "second": null
+                },
+                "venue": {
+                    "id": 574,
+                    "name": "Deepdale",
+                    "city": "Preston"
+                },
+                "status": {
+                    "long": "Match Cancelled",
+                    "short": "CANC",
+                    "elapsed": null
+                }
+            },
+            "league": {
+                "id": 667,
+                "name": "Friendlies Clubs",
+                "country": "World",
+                "logo": "https://media-4.api-sports.io/football/leagues/667.png",
+                "flag": null,
+                "season": 2021,
+                "round": "Club Friendlies 1"
+            },
+            "teams": {
+                "home": {
+                    "id": 59,
+                    "name": "Preston",
+                    "logo": "https://media-4.api-sports.io/football/teams/59.png",
+                    "winner": null
+                },
+                "away": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": null
+                }
+            },
+            "goals": {
+                "home": null,
+                "away": null
+            },
+            "score": {
+                "halftime": {
+                    "home": null,
+                    "away": null
+                },
+                "fulltime": {
+                    "home": null,
+                    "away": null
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 736043,
+                "referee": "M. Atkinson",
+                "timezone": "UTC",
+                "date": "2021-08-07T11:45:00+00:00",
+                "timestamp": 1628336700,
+                "periods": {
+                    "first": 1628336700,
+                    "second": 1628340300
+                },
+                "venue": {
+                    "id": 556,
+                    "name": "Old Trafford",
+                    "city": "Manchester"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 667,
+                "name": "Friendlies Clubs",
+                "country": "World",
+                "logo": "https://media-4.api-sports.io/football/leagues/667.png",
+                "flag": null,
+                "season": 2021,
+                "round": "Club Friendlies 1"
+            },
+            "teams": {
+                "home": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": true
+                },
+                "away": {
+                    "id": 45,
+                    "name": "Everton",
+                    "logo": "https://media-4.api-sports.io/football/teams/45.png",
+                    "winner": false
+                }
+            },
+            "goals": {
+                "home": 4,
+                "away": 0
+            },
+            "score": {
+                "halftime": {
+                    "home": 3,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 4,
+                    "away": 0
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 787050,
+                "referee": "J. Moss",
+                "timezone": "UTC",
+                "date": "2021-09-22T18:45:00+00:00",
+                "timestamp": 1632336300,
+                "periods": {
+                    "first": 1632336300,
+                    "second": 1632339900
+                },
+                "venue": {
+                    "id": 556,
+                    "name": "Old Trafford",
+                    "city": "Manchester"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 48,
+                "name": "League Cup",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/48.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "3rd Round"
+            },
+            "teams": {
+                "home": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": false
+                },
+                "away": {
+                    "id": 48,
+                    "name": "West Ham",
+                    "logo": "https://media-4.api-sports.io/football/teams/48.png",
+                    "winner": true
+                }
+            },
+            "goals": {
+                "home": 0,
+                "away": 1
+            },
+            "score": {
+                "halftime": {
+                    "home": 0,
+                    "away": 1
+                },
+                "fulltime": {
+                    "home": 0,
+                    "away": 1
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 787560,
+                "referee": "F. Letexier",
+                "timezone": "UTC",
+                "date": "2021-09-14T16:45:00+00:00",
+                "timestamp": 1631637900,
+                "periods": {
+                    "first": 1631637900,
+                    "second": 1631641500
+                },
+                "venue": {
+                    "id": 10500,
+                    "name": "Stadion Wankdorf",
+                    "city": "Bern"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 2,
+                "name": "UEFA Champions League",
+                "country": "World",
+                "logo": "https://media-4.api-sports.io/football/leagues/2.png",
+                "flag": null,
+                "season": 2021,
+                "round": "Group Stage - 1"
+            },
+            "teams": {
+                "home": {
+                    "id": 565,
+                    "name": "BSC Young Boys",
+                    "logo": "https://media-4.api-sports.io/football/teams/565.png",
+                    "winner": true
+                },
+                "away": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": false
+                }
+            },
+            "goals": {
+                "home": 2,
+                "away": 1
+            },
+            "score": {
+                "halftime": {
+                    "home": 0,
+                    "away": 1
+                },
+                "fulltime": {
+                    "home": 2,
+                    "away": 1
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 787588,
+                "referee": "F. Zwayer",
+                "timezone": "UTC",
+                "date": "2021-09-29T19:00:00+00:00",
+                "timestamp": 1632942000,
+                "periods": {
+                    "first": 1632942000,
+                    "second": 1632945600
+                },
+                "venue": {
+                    "id": 556,
+                    "name": "Old Trafford",
+                    "city": "Manchester"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 2,
+                "name": "UEFA Champions League",
+                "country": "World",
+                "logo": "https://media-4.api-sports.io/football/leagues/2.png",
+                "flag": null,
+                "season": 2021,
+                "round": "Group Stage - 2"
+            },
+            "teams": {
+                "home": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": true
+                },
+                "away": {
+                    "id": 533,
+                    "name": "Villarreal",
+                    "logo": "https://media-4.api-sports.io/football/teams/533.png",
+                    "winner": false
+                }
+            },
+            "goals": {
+                "home": 2,
+                "away": 1
+            },
+            "score": {
+                "halftime": {
+                    "home": 0,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 2,
+                    "away": 1
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 787604,
+                "referee": "S. Marciniak",
+                "timezone": "UTC",
+                "date": "2021-10-20T19:00:00+00:00",
+                "timestamp": 1634756400,
+                "periods": {
+                    "first": 1634756400,
+                    "second": 1634760000
+                },
+                "venue": {
+                    "id": 556,
+                    "name": "Old Trafford",
+                    "city": "Manchester"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 2,
+                "name": "UEFA Champions League",
+                "country": "World",
+                "logo": "https://media-4.api-sports.io/football/leagues/2.png",
+                "flag": null,
+                "season": 2021,
+                "round": "Group Stage - 3"
+            },
+            "teams": {
+                "home": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": true
+                },
+                "away": {
+                    "id": 499,
+                    "name": "Atalanta",
+                    "logo": "https://media-4.api-sports.io/football/teams/499.png",
+                    "winner": false
+                }
+            },
+            "goals": {
+                "home": 3,
+                "away": 2
+            },
+            "score": {
+                "halftime": {
+                    "home": 0,
+                    "away": 2
+                },
+                "fulltime": {
+                    "home": 3,
+                    "away": 2
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 787612,
+                "referee": "S. Vinčić",
+                "timezone": "UTC",
+                "date": "2021-11-02T20:00:00+00:00",
+                "timestamp": 1635883200,
+                "periods": {
+                    "first": 1635883200,
+                    "second": 1635886800
+                },
+                "venue": {
+                    "id": 879,
+                    "name": "Gewiss Stadium",
+                    "city": "Bergamo"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 2,
+                "name": "UEFA Champions League",
+                "country": "World",
+                "logo": "https://media-4.api-sports.io/football/leagues/2.png",
+                "flag": null,
+                "season": 2021,
+                "round": "Group Stage - 4"
+            },
+            "teams": {
+                "home": {
+                    "id": 499,
+                    "name": "Atalanta",
+                    "logo": "https://media-4.api-sports.io/football/teams/499.png",
+                    "winner": null
+                },
+                "away": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": null
+                }
+            },
+            "goals": {
+                "home": 2,
+                "away": 2
+            },
+            "score": {
+                "halftime": {
+                    "home": 1,
+                    "away": 1
+                },
+                "fulltime": {
+                    "home": 2,
+                    "away": 2
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 787625,
+                "referee": "F. Brych",
+                "timezone": "UTC",
+                "date": "2021-11-23T17:45:00+00:00",
+                "timestamp": 1637689500,
+                "periods": {
+                    "first": 1637689500,
+                    "second": 1637693100
+                },
+                "venue": {
+                    "id": 1498,
+                    "name": "Estadio de la Cerámica",
+                    "city": "Villarreal"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 2,
+                "name": "UEFA Champions League",
+                "country": "World",
+                "logo": "https://media-4.api-sports.io/football/leagues/2.png",
+                "flag": null,
+                "season": 2021,
+                "round": "Group Stage - 5"
+            },
+            "teams": {
+                "home": {
+                    "id": 533,
+                    "name": "Villarreal",
+                    "logo": "https://media-4.api-sports.io/football/teams/533.png",
+                    "winner": false
+                },
+                "away": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": true
+                }
+            },
+            "goals": {
+                "home": 0,
+                "away": 2
+            },
+            "score": {
+                "halftime": {
+                    "home": 0,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 0,
+                    "away": 2
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 787652,
+                "referee": "B. Bastien",
+                "timezone": "UTC",
+                "date": "2021-12-08T20:00:00+00:00",
+                "timestamp": 1638993600,
+                "periods": {
+                    "first": 1638993600,
+                    "second": 1638997200
+                },
+                "venue": {
+                    "id": 556,
+                    "name": "Old Trafford",
+                    "city": "Manchester"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 2,
+                "name": "UEFA Champions League",
+                "country": "World",
+                "logo": "https://media-4.api-sports.io/football/leagues/2.png",
+                "flag": null,
+                "season": 2021,
+                "round": "Group Stage - 6"
+            },
+            "teams": {
+                "home": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": null
+                },
+                "away": {
+                    "id": 565,
+                    "name": "BSC Young Boys",
+                    "logo": "https://media-4.api-sports.io/football/teams/565.png",
+                    "winner": null
+                }
+            },
+            "goals": {
+                "home": 1,
+                "away": 1
+            },
+            "score": {
+                "halftime": {
+                    "home": 1,
+                    "away": 1
+                },
+                "fulltime": {
+                    "home": 1,
+                    "away": 1
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 815162,
+                "referee": "M. Oliver",
+                "timezone": "UTC",
+                "date": "2022-01-10T19:55:00+00:00",
+                "timestamp": 1641844500,
+                "periods": {
+                    "first": 1641844500,
+                    "second": 1641848100
+                },
+                "venue": {
+                    "id": 556,
+                    "name": "Old Trafford",
+                    "city": "Manchester"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 45,
+                "name": "FA Cup",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/45.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "3rd Round"
+            },
+            "teams": {
+                "home": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": true
+                },
+                "away": {
+                    "id": 66,
+                    "name": "Aston Villa",
+                    "logo": "https://media-4.api-sports.io/football/teams/66.png",
+                    "winner": false
+                }
+            },
+            "goals": {
+                "home": 1,
+                "away": 0
+            },
+            "score": {
+                "halftime": {
+                    "home": 1,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 1,
+                    "away": 0
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 816254,
+                "referee": "O. Hațegan",
+                "timezone": "UTC",
+                "date": "2022-02-23T20:00:00+00:00",
+                "timestamp": 1645646400,
+                "periods": {
+                    "first": 1645646400,
+                    "second": 1645650000
+                },
+                "venue": {
+                    "id": 1461,
+                    "name": "Estadio Wanda Metropolitano",
+                    "city": "Madrid"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 2,
+                "name": "UEFA Champions League",
+                "country": "World",
+                "logo": "https://media-4.api-sports.io/football/leagues/2.png",
+                "flag": null,
+                "season": 2021,
+                "round": "Round of 16"
+            },
+            "teams": {
+                "home": {
+                    "id": 530,
+                    "name": "Atletico Madrid",
+                    "logo": "https://media-4.api-sports.io/football/teams/530.png",
+                    "winner": null
+                },
+                "away": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": null
+                }
+            },
+            "goals": {
+                "home": 1,
+                "away": 1
+            },
+            "score": {
+                "halftime": {
+                    "home": 1,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 1,
+                    "away": 1
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 816255,
+                "referee": "S. Vinčić",
+                "timezone": "UTC",
+                "date": "2022-03-15T20:00:00+00:00",
+                "timestamp": 1647374400,
+                "periods": {
+                    "first": 1647374400,
+                    "second": 1647378000
+                },
+                "venue": {
+                    "id": 556,
+                    "name": "Old Trafford",
+                    "city": "Manchester"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 2,
+                "name": "UEFA Champions League",
+                "country": "World",
+                "logo": "https://media-4.api-sports.io/football/leagues/2.png",
+                "flag": null,
+                "season": 2021,
+                "round": "Round of 16"
+            },
+            "teams": {
+                "home": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": false
+                },
+                "away": {
+                    "id": 530,
+                    "name": "Atletico Madrid",
+                    "logo": "https://media-4.api-sports.io/football/teams/530.png",
+                    "winner": true
+                }
+            },
+            "goals": {
+                "home": 0,
+                "away": 1
+            },
+            "score": {
+                "halftime": {
+                    "home": 0,
+                    "away": 1
+                },
+                "fulltime": {
+                    "home": 0,
+                    "away": 1
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 824596,
+                "referee": "A. Taylor",
+                "timezone": "UTC",
+                "date": "2022-02-04T20:00:00+00:00",
+                "timestamp": 1644004800,
+                "periods": {
+                    "first": 1644004800,
+                    "second": 1644008400
+                },
+                "venue": {
+                    "id": 556,
+                    "name": "Old Trafford",
+                    "city": "Manchester"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "PEN",
+                    "elapsed": 120
+                }
+            },
+            "league": {
+                "id": 45,
+                "name": "FA Cup",
+                "country": "England",
+                "logo": "https://media-4.api-sports.io/football/leagues/45.png",
+                "flag": "https://media-4.api-sports.io/flags/gb.svg",
+                "season": 2021,
+                "round": "4th Round"
+            },
+            "teams": {
+                "home": {
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-4.api-sports.io/football/teams/33.png",
+                    "winner": false
+                },
+                "away": {
+                    "id": 70,
+                    "name": "Middlesbrough",
+                    "logo": "https://media-4.api-sports.io/football/teams/70.png",
+                    "winner": true
+                }
+            },
+            "goals": {
+                "home": 1,
+                "away": 1
+            },
+            "score": {
+                "halftime": {
+                    "home": 1,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 1,
+                    "away": 1
+                },
+                "extratime": {
+                    "home": 0,
+                    "away": 0
+                },
+                "penalty": {
+                    "home": 7,
+                    "away": 8
+                }
+            }
+        }
+    ]
+}
