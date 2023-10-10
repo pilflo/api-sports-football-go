@@ -99,7 +99,7 @@ func executeQuery(ctx context.Context, c *Client, req *http.Request) (*ResponseO
 	if err != nil {
 		logger.ErrorContext(ctx, "failed to execute request")
 
-		return nil, fmt.Errorf("faild to execute http request: %w", err)
+		return nil, fmt.Errorf("failed to execute http request: %w", err)
 	}
 
 	logger.DebugContext(ctx, "Response Code : %v", slog.Int("status_code", res.StatusCode))
