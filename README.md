@@ -1,4 +1,5 @@
 # api-sports-football-go
+[![API Sports Football Go](https://github.com/pilflo/api-sports-football-go/actions/workflows/ci.yml/badge.svg)](https://github.com/pilflo/api-sports-football-go/actions/workflows/ci.yml)
 
 A golang library for api-sports.io football API
 
@@ -99,7 +100,3 @@ make check
 | /odds/bets| ❌
 | /odds/live | ❌
 | /odds/live/bets | ❌
-
-
-
-
