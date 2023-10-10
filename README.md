@@ -61,3 +61,45 @@ make check
 
 ## Coverage
 
+| ENDPOINT  | COVERAGE 
+|--|--
+| /timezone | ❌
+| /countries | ✅
+| /leagues | ❌
+| /leagues/seasons | ❌
+| /teams | ❌
+| /teams/statistics | ❌
+| /teams/seasons | ❌
+| /teams/countries | ❌
+| /venues | ❌
+| /standings | ❌
+| /fixtures/ | ✅
+| /fixtures/rounds | ❌
+| /fixtures/headtohead | ❌
+| /fixtures/statistics | ❌
+| /fixtures/events | ❌
+| /fixtures/lineups | ❌
+| /fixtures/players | ❌
+| /injuries | ❌
+| /predictions | ❌
+| /coachs | ❌
+| /players | ❌
+| /players/seasons | ❌
+| /players/squads | ❌
+| /players/topscorers | ❌
+| /players/topassists | ❌
+| /players/topyellowcards | ❌
+| /players/topredcards | ❌
+| /transfers | ❌
+| /trophies | ❌
+| /sidelined | ❌
+| /odds | ❌
+| /odds/mappings | ❌
+| /odds/bookmakers | ❌
+| /odds/bets| ❌
+| /odds/live | ❌
+| /odds/live/bets | ❌
+
+
+
+
