@@ -25,5 +25,4 @@ func main() {
 	}
 
 	log.Printf("There are %v live fixtures.", len(resF.Fixtures))
-
 }

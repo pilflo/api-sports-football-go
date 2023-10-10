@@ -237,6 +237,7 @@ type FixturesResult struct {
 
 func translateParams(params *FixturesQueryParams) *fixturesQueryParams {
 	ret := fixturesQueryParams{
+		ID:       params.ID,
 		Date:     params.Date,
 		League:   params.League,
 		Season:   params.Season,

@@ -114,6 +114,7 @@ func TestFixturesAPIError(t *testing.T) {
 		assert.IsType(err, tc.expectedError)
 	}
 }
+
 func TestFixturesValidationErrors(t *testing.T) {
 	tests := map[string]*api.FixturesQueryParams{
 		"id negative":            {ID: ptr(-1)},
@@ -122,7 +123,7 @@ func TestFixturesValidationErrors(t *testing.T) {
 		"last too big":           {Last: ptr(100)},
 	}
 
-	client := api.NewClient(api.SubTypeAPISports)
+	client := api.NewClient(api.SubTypeAPISports).WithCustomAPIURL("http://test.com")
 
 	for name, tc := range tests {
 		t.Run(name, func(t *testing.T) {
