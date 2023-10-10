@@ -108,7 +108,6 @@ const (
 )
 
 // FixturesQueryParams represents the parameters to pass to the /fixtures endpoint.
-
 type FixturesQueryParams struct {
 	ID          *int
 	IDs         []int
