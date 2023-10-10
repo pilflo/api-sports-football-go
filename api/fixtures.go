@@ -4,6 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"strconv"
 	"strings"
 	"time"
 )
@@ -107,11 +108,10 @@ const (
 )
 
 // FixturesQueryParams represents the parameters to pass to the /fixtures endpoint.
-// validate tags are for the go-playground/validator.
-// url tags are for google/go-querystring.
-// `validate:"omitempty," url:",omitempty"`.
+
 type FixturesQueryParams struct {
 	ID          *int
+	IDs         []int
 	Live        bool
 	LiveLeagues []int
 	Date        *time.Time
@@ -133,6 +133,7 @@ type FixturesQueryParams struct {
 // `validate:"omitempty," url:",omitempty"`.
 type fixturesQueryParams struct {
 	ID       *int               `validate:"omitempty,gte=0" url:"id,omitempty"`
+	IDs      *string            `validate:"omitempty" url:"ids,omitempty"`
 	Live     *string            `validate:"omitempty" url:"live,omitempty"`
 	Date     *time.Time         `validate:"omitempty" url:"date,omitempty" layout:"2006-01-02"`
 	League   *int               `validate:"omitempty,gte=0" url:"league,omitempty"`
@@ -236,7 +237,6 @@ type FixturesResult struct {
 
 func translateParams(params *FixturesQueryParams) *fixturesQueryParams {
 	ret := fixturesQueryParams{
-		ID:       params.ID,
 		Date:     params.Date,
 		League:   params.League,
 		Season:   params.Season,
@@ -269,6 +269,24 @@ func translateParams(params *FixturesQueryParams) *fixturesQueryParams {
 		}
 
 		ret.Live = &liveStr
+	}
+
+	idStr := ""
+
+	if params.IDs != nil {
+		ids := params.IDs
+		switch len(ids) {
+		case 0:
+			// Ignore if the array is empty.
+		case 1:
+			// If only a single
+			idStr = strconv.Itoa(ids[0])
+			ret.IDs = &idStr
+		default:
+			// Set Ids param to id1-id2-id3... fixture ids.
+			idStr = arrayToString(ids, "-")
+			ret.IDs = &idStr
+		}
 	}
 
 	return &ret

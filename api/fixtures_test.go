@@ -18,6 +18,7 @@ type fixturesTestCase struct {
 	jsonFilePath    string
 	responseCode    int
 	expectedResults int
+	expectedError   error
 }
 
 func TestFixturesOK(t *testing.T) {
@@ -71,6 +72,48 @@ func TestFixturesOK(t *testing.T) {
 	}
 }
 
+func TestFixturesAPIError(t *testing.T) {
+	assert := assert.New(t)
+	tests := map[string]fixturesTestCase{
+		"id=33,live=all": {
+			params: &api.FixturesQueryParams{
+				ID:   ptr(1132381),
+				Live: true,
+			},
+			jsonFilePath:    "./test_files/fixtures_error_live_id.json",
+			responseCode:    http.StatusOK,
+			expectedResults: 0,
+			expectedError:   &api.ResponseError{},
+		},
+	}
+	server := mockserver.GetServer()
+
+	client := api.NewClient(api.SubTypeAPISports).WithCustomAPIURL(server.URL)
+
+	for _, tc := range tests {
+
+		queryParams := &url.Values{}
+		if tc.params.ID != nil {
+			queryParams.Add("id", strconv.Itoa(*tc.params.ID))
+		}
+		if tc.params.Live {
+			queryParams.Add("live", "all")
+		}
+
+		mockserver.AddJSONHandler(t, mockserver.MockJSONResponse{
+			Path:         "/fixtures",
+			QueryParams:  queryParams,
+			ResponseCode: tc.responseCode,
+			FilePath:     tc.jsonFilePath,
+		})
+
+		res, err := client.Fixtures(context.Background(), tc.params)
+
+		assert.Nil(res)
+		assert.NotNil(err)
+		assert.IsType(err, tc.expectedError)
+	}
+}
 func TestFixturesValidationErrors(t *testing.T) {
 	tests := map[string]*api.FixturesQueryParams{
 		"id negative":            {ID: ptr(-1)},
