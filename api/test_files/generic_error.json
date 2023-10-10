@@ -1,0 +1,1 @@
+{"get":"countries","parameters":{"name":"","code":"FRA","search":"fr"},"errors":{"field1":"An error message related to the field.","field2":"An error message related to the field2.","field3":"An error message related to the field3."},"results":0,"paging":{"current":1,"total":1},"response":[]}
