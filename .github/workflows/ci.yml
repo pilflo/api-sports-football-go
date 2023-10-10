@@ -16,9 +16,6 @@ jobs:
     - name: Build Docker Image 
       run: | 
         make check.build
-    - name: Build Docker Image 
-      run: | 
-        make check.build
     - name: Go imports 
       run: | 
         make check.imports 
@@ -33,4 +30,5 @@ jobs:
         make check.lint 
     - name: Go Unit Tests 
       run: | 
+        go mod vendor
         make check.test 
