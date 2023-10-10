@@ -1,0 +1,33 @@
+name: API Sports Football Go 
+run-name: CI - Triggered by ${{ github.event_name }} on ${{ github.ref_name }}
+on:
+  push:
+  pull_request: # By default pull_request triggers on [opened, synchronized, reopened]
+  workflow_dispatch:
+
+jobs:
+  check:
+    name: Run static checks 
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    - name: Build Docker Image 
+      run: | 
+        make check.build
+    - name: Go imports 
+      run: | 
+        make check.imports 
+    - name: Go format 
+      run: | 
+        make check.fmt 
+    - name: Check diff 
+      run: | 
+        git diff --quiet && exit 1 || exit 0
+    - name: Go lint 
+      run: | 
+        make check.lint 
+    - name: Go Unit Tests 
+      run: | 
+        make check.test 
