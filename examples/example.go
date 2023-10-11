@@ -45,7 +45,6 @@ func main() {
 
 	teamInfo := resT.Teams[0]
 	log.Printf("%v football team was founded in %v and plays at %v", teamInfo.Team.Name, teamInfo.Team.Founded, teamInfo.Venue.Name)
-
 }
 
 func ptr[T any](value T) *T { return &value }
