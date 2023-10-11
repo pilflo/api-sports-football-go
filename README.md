@@ -1,4 +1,5 @@
 # api-sports-football-go
+[![API Sports Football Go](https://github.com/pilflo/api-sports-football-go/actions/workflows/ci.yml/badge.svg)](https://github.com/pilflo/api-sports-football-go/actions/workflows/ci.yml)
 
 A golang library for api-sports.io football API
 
@@ -47,6 +48,26 @@ func main() {
 
 	log.Printf("There are %v live fixtures.", len(resF.Fixtures))
 
+	resL, err := client.Leagues(ctx, &sports.LeaguesQueryParams{
+		ID:      ptr(39),
+		Current: ptr(true),
+	})
+	if err != nil {
+		log.Fatal(err)
+	}
+	league := resL.Leagues[0]
+	log.Printf("There current season of %v ends on %v", league.LeagueInfo.Name, league.Seasons[0].End)
+
+	resT, err := client.TeamsInformation(ctx, &sports.TeamsInformationQueryParams{
+		ID: ptr(42),
+	})
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	teamInfo := resT.Teams[0]
+	log.Printf("%v football team was founded in %v and plays at %v", teamInfo.Team.Name, teamInfo.Team.Founded, teamInfo.Venue.Name)
+
 }
 ```
 
@@ -65,9 +86,9 @@ make check
 |--|--
 | /timezone | ❌
 | /countries | ✅
-| /leagues | ❌
+| /leagues | ✅
 | /leagues/seasons | ❌
-| /teams | ❌
+| /teams | ✅
 | /teams/statistics | ❌
 | /teams/seasons | ❌
 | /teams/countries | ❌
@@ -99,7 +120,3 @@ make check
 | /odds/bets| ❌
 | /odds/live | ❌
 | /odds/live/bets | ❌
-
-
-
-
