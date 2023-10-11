@@ -27,7 +27,7 @@ func TestLeaguesOK(t *testing.T) {
 	tests := map[string]leaguesTestCase{
 		"leagues,country=france": {
 			params: &api.LeaguesQueryParams{
-				Country: ptr("france"),
+				Country: "france",
 			},
 			jsonFilePath:    "./test_files/leagues_fr.json",
 			responseCode:    http.StatusOK,
@@ -41,7 +41,7 @@ func TestLeaguesOK(t *testing.T) {
 		},
 		"leagues,id=39": {
 			params: &api.LeaguesQueryParams{
-				ID: ptr(39),
+				ID: 39,
 			},
 			jsonFilePath:    "./test_files/leagues_id_39.json",
 			responseCode:    http.StatusOK,
@@ -61,12 +61,12 @@ func TestLeaguesOK(t *testing.T) {
 	for _, tc := range tests {
 
 		queryParams := &url.Values{}
-		if tc.params.Country != nil {
-			queryParams.Add("country", *tc.params.Country)
+		if tc.params.Country != "" {
+			queryParams.Add("country", tc.params.Country)
 		}
 
-		if tc.params.ID != nil {
-			queryParams.Add("id", strconv.Itoa(*tc.params.ID))
+		if tc.params.ID > 0 {
+			queryParams.Add("id", strconv.Itoa(tc.params.ID))
 		}
 
 		mockserver.AddJSONHandler(t, mockserver.MockJSONResponse{
@@ -93,15 +93,13 @@ func TestLeaguesOK(t *testing.T) {
 
 func TestLeaguesValidationErrors(t *testing.T) {
 	tests := map[string]*api.LeaguesQueryParams{
-		"id negative":            {ID: ptr(-1)},
-		"name too short":         {Name: ptr("")},
-		"country too short":      {Country: ptr("")},
-		"code too short":         {Code: ptr("F")},
-		"code too long":          {Code: ptr("FRA")},
-		"season incorrect range": {Season: ptr(666)},
-		"team negative":          {Team: ptr(-1)},
-		"search too short":       {Search: ptr("FR")},
-		"last too big":           {Last: ptr(100)},
+		"id negative":            {ID: -1},
+		"code too short":         {Code: "F"},
+		"code too long":          {Code: "FRA"},
+		"season incorrect range": {Season: 666},
+		"team negative":          {Team: -1},
+		"search too short":       {Search: "FR"},
+		"last too big":           {Last: 100},
 	}
 
 	client := api.NewClient(api.SubTypeAPISports).WithCustomAPIURL("http://test.com")

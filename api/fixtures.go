@@ -109,21 +109,21 @@ const (
 
 // FixturesQueryParams represents the parameters to pass to the /fixtures endpoint.
 type FixturesQueryParams struct {
-	ID          *int
+	ID          int
 	IDs         []int
 	Live        bool
 	LiveLeagues []int
-	Date        *time.Time
-	League      *int
-	Season      *int
-	Team        *int
-	Last        *int
-	Next        *int
-	From        *time.Time
-	To          *time.Time
-	Round       *string
-	Status      *FixtureStatusType
-	Timezone    *string
+	Date        time.Time
+	League      int
+	Season      int
+	Team        int
+	Last        int
+	Next        int
+	From        time.Time
+	To          time.Time
+	Round       string
+	Status      FixtureStatusType
+	Timezone    string
 }
 
 // fixturesQueryParams represents the parameters to pass to the /fixtures endpoint.
@@ -131,20 +131,20 @@ type FixturesQueryParams struct {
 // url tags are for google/go-querystring.
 // `validate:"omitempty," url:",omitempty"`.
 type fixturesQueryParams struct {
-	ID       *int               `validate:"omitempty,gte=0" url:"id,omitempty"`
-	IDs      *string            `validate:"omitempty" url:"ids,omitempty"`
-	Live     *string            `validate:"omitempty" url:"live,omitempty"`
-	Date     *time.Time         `validate:"omitempty" url:"date,omitempty" layout:"2006-01-02"`
-	League   *int               `validate:"omitempty,gte=0" url:"league,omitempty"`
-	Season   *int               `validate:"omitempty,gte=1000,lte=9999" url:"season,omitempty"`
-	Team     *int               `validate:"omitempty,gte=0" url:"team,omitempty"`
-	Last     *int               `validate:"omitempty,gte=0,lte=99" url:"last,omitempty"`
-	Next     *int               `validate:"omitempty,gte=0,lte=99" url:"next,omitempty"`
-	From     *time.Time         `validate:"omitempty" url:"from,omitempty" layout:"2006-01-02"`
-	To       *time.Time         `validate:"omitempty" url:"to,omitempty" layout:"2006-01-02"`
-	Round    *string            `validate:"omitempty,min=1" url:"round,omitempty"`
-	Status   *FixtureStatusType `validate:"omitempty,min=1" url:"status,omitempty"`
-	Timezone *string            `validate:"omitempty,min=1" url:"timezone,omitempty"`
+	ID       int               `validate:"omitempty,gte=0" url:"id,omitempty"`
+	IDs      string            `validate:"omitempty" url:"ids,omitempty"`
+	Live     string            `validate:"omitempty" url:"live,omitempty"`
+	Date     time.Time         `validate:"omitempty" url:"date,omitempty" layout:"2006-01-02"`
+	League   int               `validate:"omitempty,gte=0" url:"league,omitempty"`
+	Season   int               `validate:"omitempty,gte=1000,lte=9999" url:"season,omitempty"`
+	Team     int               `validate:"omitempty,gte=0" url:"team,omitempty"`
+	Last     int               `validate:"omitempty,gte=0,lte=99" url:"last,omitempty"`
+	Next     int               `validate:"omitempty,gte=0,lte=99" url:"next,omitempty"`
+	From     time.Time         `validate:"omitempty" url:"from,omitempty" layout:"2006-01-02"`
+	To       time.Time         `validate:"omitempty" url:"to,omitempty" layout:"2006-01-02"`
+	Round    string            `validate:"omitempty,min=1" url:"round,omitempty"`
+	Status   FixtureStatusType `validate:"omitempty,min=1" url:"status,omitempty"`
+	Timezone string            `validate:"omitempty,min=1" url:"timezone,omitempty"`
 }
 
 // Fixture wraps league top objects.
@@ -261,17 +261,15 @@ func translateParams(params *FixturesQueryParams) *fixturesQueryParams {
 			case 1:
 				// Keep Live param to 'all' and sort with the single league.
 				// Overrides a potential League param.
-				ret.League = &liveLeagues[0]
+				ret.League = liveLeagues[0]
 			default:
 				// Set Live param to id1-id2-id3... league ids.
 				liveStr = arrayToString(liveLeagues, "-")
 			}
 		}
 
-		ret.Live = &liveStr
+		ret.Live = liveStr
 	}
-
-	idStr := ""
 
 	if params.IDs != nil {
 		ids := params.IDs
@@ -280,12 +278,10 @@ func translateParams(params *FixturesQueryParams) *fixturesQueryParams {
 			// Ignore if the array is empty.
 		case 1:
 			// If only a single
-			idStr = strconv.Itoa(ids[0])
-			ret.IDs = &idStr
+			ret.IDs = strconv.Itoa(ids[0])
 		default:
 			// Set Ids param to id1-id2-id3... fixture ids.
-			idStr = arrayToString(ids, "-")
-			ret.IDs = &idStr
+			ret.IDs = arrayToString(ids, "-")
 		}
 	}
 

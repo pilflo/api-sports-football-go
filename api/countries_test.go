@@ -34,8 +34,8 @@ func TestCountriesOK(t *testing.T) {
 
 func TestCountriesValidationErrors(t *testing.T) {
 	tests := map[string]*api.CountriesQueryParams{
-		"invalid code":     {Code: ptr("FRA")},
-		"search too short": {Search: ptr("FR")},
+		"invalid code":     {Code: "FRA"},
+		"search too short": {Search: "FR"},
 	}
 
 	client := api.NewClient(api.SubTypeAPISports)
@@ -58,44 +58,4 @@ func TestCountriesValidationErrors(t *testing.T) {
 			}
 		})
 	}
-}
-
-func TestCountries2ValidationErrors(t *testing.T) {
-	assert := assert.New(t)
-
-	// httpClient is nil because it is not supposed to be used anyway.
-	client := api.NewClient(api.SubTypeAPISports)
-
-	wrongSizeCode := "FRA"
-
-	query := &api.CountriesQueryParams{
-		Code: &wrongSizeCode,
-	}
-
-	resp, err := client.Countries(context.Background(), query)
-
-	assert.Nil(resp)
-	assert.NotNil(err)
-
-	emptyName := ""
-
-	query = &api.CountriesQueryParams{
-		Name: &emptyName,
-	}
-
-	resp, err = client.Countries(context.Background(), query)
-
-	assert.Nil(resp)
-	assert.NotNil(err)
-
-	tooShortSearch := "fr"
-
-	query = &api.CountriesQueryParams{
-		Search: &tooShortSearch,
-	}
-
-	resp, err = client.Countries(context.Background(), query)
-
-	assert.Nil(resp)
-	assert.NotNil(err)
 }
