@@ -22,9 +22,9 @@ type Country struct {
 // url tags are for google/go-querystring.
 // `validate:"omitempty," url:",omitempty"`.
 type CountriesQueryParams struct {
-	Name   *string `validate:"omitempty,min=1" url:"name,omitempty"`
-	Code   *string `validate:"omitempty,len=2" url:"code,omitempty"`
-	Search *string `validate:"omitempty,min=3" url:"search,omitempty"`
+	Name   string `validate:"omitempty,min=1" url:"name,omitempty"`
+	Code   string `validate:"omitempty,len=2" url:"code,omitempty"`
+	Search string `validate:"omitempty,min=3" url:"search,omitempty"`
 }
 
 // CountriesResult wraps the api raw response as well as the list of countries.

@@ -22,16 +22,16 @@ type LeagueTypeParam string
 // url tags are for google/go-querystring.
 // `validate:"omitempty," url:",omitempty"`.
 type LeaguesQueryParams struct {
-	ID      *int             `validate:"omitempty,gte=0" url:"id,omitempty"`
-	Name    *string          `validate:"omitempty,min=1" url:"name,omitempty"`
-	Country *string          `validate:"omitempty,min=1" url:"country,omitempty"`
-	Code    *string          `validate:"omitempty,len=2" url:"code,omitempty"`
-	Season  *int             `validate:"omitempty,gte=1000,lte=9999" url:"season,omitempty"`
-	Team    *int             `validate:"omitempty,gte=0" url:"team,omitempty"`
-	Type    *LeagueTypeParam `validate:"omitempty" url:"type,omitempty"`
-	Current *bool            `validate:"omitempty" url:"current,omitempty"`
-	Search  *string          `validate:"omitempty,min=3" url:"search,omitempty"`
-	Last    *int             `validate:"omitempty,lte=99" url:"last,omitempty"`
+	ID      int             `validate:"omitempty,gte=0" url:"id,omitempty"`
+	Name    string          `validate:"omitempty,min=1" url:"name,omitempty"`
+	Country string          `validate:"omitempty,min=1" url:"country,omitempty"`
+	Code    string          `validate:"omitempty,len=2" url:"code,omitempty"`
+	Season  int             `validate:"omitempty,gte=1000,lte=9999" url:"season,omitempty"`
+	Team    int             `validate:"omitempty,gte=0" url:"team,omitempty"`
+	Type    LeagueTypeParam `validate:"omitempty" url:"type,omitempty"`
+	Current bool            `validate:"omitempty" url:"current,omitempty"`
+	Search  string          `validate:"omitempty,min=3" url:"search,omitempty"`
+	Last    int             `validate:"omitempty,lte=99" url:"last,omitempty"`
 }
 
 // League wraps league top objects.

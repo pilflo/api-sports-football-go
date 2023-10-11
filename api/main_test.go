@@ -16,5 +16,3 @@ func TestMain(m *testing.M) {
 
 	os.Exit(exitCode)
 }
-
-func ptr[T any](value T) *T { return &value }

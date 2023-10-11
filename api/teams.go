@@ -12,14 +12,14 @@ const (
 
 // TeamsInformationQueryParams is a struct for wrapping teams infos endpoint query parameters.
 type TeamsInformationQueryParams struct {
-	ID      *int    `validate:"omitempty,gte=0" url:"id,omitempty"`
-	Name    *string `validate:"omitempty,min=1" url:"name,omitempty"`
-	Country *string `validate:"omitempty,min=1" url:"country,omitempty"`
-	Season  *int    `validate:"omitempty,gte=1000,lte=9999" url:"season,omitempty"`
-	Search  *string `validate:"omitempty,min=3" url:"search,omitempty"`
-	League  *int    `validate:"omitempty,gte=0" url:"league,omitempty"`
-	Code    *string `validate:"omitempty,len=3" url:"code,omitempty"`
-	Venue   *int    `validate:"omitempty,gte=0" url:"venue,omitempty"`
+	ID      int    `validate:"omitempty,gte=0" url:"id,omitempty"`
+	Name    string `validate:"omitempty,min=1" url:"name,omitempty"`
+	Country string `validate:"omitempty,min=1" url:"country,omitempty"`
+	Season  int    `validate:"omitempty,gte=1000,lte=9999" url:"season,omitempty"`
+	Search  string `validate:"omitempty,min=3" url:"search,omitempty"`
+	League  int    `validate:"omitempty,gte=0" url:"league,omitempty"`
+	Code    string `validate:"omitempty,len=3" url:"code,omitempty"`
+	Venue   int    `validate:"omitempty,gte=0" url:"venue,omitempty"`
 }
 
 // TeamInformation wraps a team top objects.

@@ -26,8 +26,8 @@ func TestFixturesOK(t *testing.T) {
 	tests := map[string]fixturesTestCase{
 		"fixtures,team=33,season=2021": {
 			params: &api.FixturesQueryParams{
-				Team:   ptr(33),
-				Season: ptr(2021),
+				Team:   33,
+				Season: 2021,
 			},
 			jsonFilePath:    "./test_files/fixtures_33_2021.json",
 			responseCode:    http.StatusOK,
@@ -35,8 +35,8 @@ func TestFixturesOK(t *testing.T) {
 		},
 		"fixtures,team=37,season=2023": {
 			params: &api.FixturesQueryParams{
-				Team:   ptr(37),
-				Season: ptr(2023),
+				Team:   37,
+				Season: 2023,
 			},
 			jsonFilePath:    "./test_files/fixtures_37_2023.json",
 			responseCode:    http.StatusOK,
@@ -50,11 +50,11 @@ func TestFixturesOK(t *testing.T) {
 	for _, tc := range tests {
 
 		queryParams := &url.Values{}
-		if tc.params.Team != nil {
-			queryParams.Add("team", strconv.Itoa(*tc.params.Team))
+		if tc.params.Team > 0 {
+			queryParams.Add("team", strconv.Itoa(tc.params.Team))
 		}
-		if tc.params.Season != nil {
-			queryParams.Add("season", strconv.Itoa(*tc.params.Season))
+		if tc.params.Season > 1000 {
+			queryParams.Add("season", strconv.Itoa(tc.params.Season))
 		}
 
 		mockserver.AddJSONHandler(t, mockserver.MockJSONResponse{
@@ -77,7 +77,7 @@ func TestFixturesAPIError(t *testing.T) {
 	tests := map[string]fixturesTestCase{
 		"id=33,live=all": {
 			params: &api.FixturesQueryParams{
-				ID:   ptr(1132381),
+				ID:   1132381,
 				Live: true,
 			},
 			jsonFilePath:    "./test_files/fixtures_error_live_id.json",
@@ -93,8 +93,8 @@ func TestFixturesAPIError(t *testing.T) {
 	for _, tc := range tests {
 
 		queryParams := &url.Values{}
-		if tc.params.ID != nil {
-			queryParams.Add("id", strconv.Itoa(*tc.params.ID))
+		if tc.params.ID > 0 {
+			queryParams.Add("id", strconv.Itoa(tc.params.ID))
 		}
 		if tc.params.Live {
 			queryParams.Add("live", "all")
@@ -117,10 +117,10 @@ func TestFixturesAPIError(t *testing.T) {
 
 func TestFixturesValidationErrors(t *testing.T) {
 	tests := map[string]*api.FixturesQueryParams{
-		"id negative":            {ID: ptr(-1)},
-		"season incorrect range": {Season: ptr(666)},
-		"team negative":          {Team: ptr(-1)},
-		"last too big":           {Last: ptr(100)},
+		"id negative":            {ID: -1},
+		"season incorrect range": {Season: 666},
+		"team negative":          {Team: -1},
+		"last too big":           {Last: 100},
 	}
 
 	client := api.NewClient(api.SubTypeAPISports).WithCustomAPIURL("http://test.com")
