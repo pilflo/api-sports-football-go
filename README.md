@@ -68,7 +68,7 @@ make check
 | /countries | ✅
 | /leagues | ✅
 | /leagues/seasons | ❌
-| /teams | ❌
+| /teams | ✅
 | /teams/statistics | ❌
 | /teams/seasons | ❌
 | /teams/countries | ❌
