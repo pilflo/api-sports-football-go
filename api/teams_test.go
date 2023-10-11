@@ -13,44 +13,50 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-type leaguesTestCase struct {
-	params             *api.LeaguesQueryParams
+type teamsTestCase struct {
+	params             *api.TeamsInformationQueryParams
 	jsonFilePath       string
 	responseCode       int
 	expectedResults    int
 	expectedAttributes map[string]any
 }
 
-func TestLeaguesOK(t *testing.T) {
+func TestTeamsInfoOK(t *testing.T) {
 	assert := assert.New(t)
 
-	tests := map[string]leaguesTestCase{
-		"leagues,country=france": {
-			params: &api.LeaguesQueryParams{
+	tests := map[string]teamsTestCase{
+		"teams,country=france": {
+			params: &api.TeamsInformationQueryParams{
 				Country: ptr("france"),
 			},
-			jsonFilePath:    "./test_files/leagues_fr.json",
+			jsonFilePath:    "./test_files/teams_fr.json",
 			responseCode:    http.StatusOK,
-			expectedResults: 23,
+			expectedResults: 894,
 			expectedAttributes: map[string]any{
-				"ID":   61,
-				"Name": "Ligue 1",
-				"Type": "League",
-				"Logo": "https://media.api-sports.io/football/leagues/61.png",
+				"ID":       2,
+				"Name":     "France",
+				"Code":     "FRA",
+				"Country":  "France",
+				"Founded":  1919,
+				"National": true,
+				"Logo":     "https://media-4.api-sports.io/football/teams/2.png",
 			},
 		},
-		"leagues,id=39": {
-			params: &api.LeaguesQueryParams{
-				ID: ptr(39),
+		"teams,id=42": {
+			params: &api.TeamsInformationQueryParams{
+				Country: ptr("france"),
 			},
-			jsonFilePath:    "./test_files/leagues_id_39.json",
+			jsonFilePath:    "./test_files/teams_id_42.json",
 			responseCode:    http.StatusOK,
 			expectedResults: 1,
 			expectedAttributes: map[string]any{
-				"ID":   39,
-				"Name": "Premier League",
-				"Type": "League",
-				"Logo": "https://media-4.api-sports.io/football/leagues/39.png",
+				"ID":       42,
+				"Name":     "Arsenal",
+				"Code":     "ARS",
+				"Country":  "England",
+				"Founded":  1886,
+				"National": false,
+				"Logo":     "https://media-4.api-sports.io/football/teams/42.png",
 			},
 		},
 	}
@@ -70,20 +76,20 @@ func TestLeaguesOK(t *testing.T) {
 		}
 
 		mockserver.AddJSONHandler(t, mockserver.MockJSONResponse{
-			Path:         "/leagues",
+			Path:         "/teams",
 			QueryParams:  queryParams,
 			ResponseCode: tc.responseCode,
 			FilePath:     tc.jsonFilePath,
 		})
 
-		res, err := client.Leagues(context.Background(), tc.params)
+		res, err := client.TeamsInformation(context.Background(), tc.params)
 
 		assert.Nil(err)
 		assert.NotNil(res)
-		assert.Len(res.Leagues, tc.expectedResults)
-		league := res.Leagues[0].LeagueInfo
+		assert.Len(res.Teams, tc.expectedResults)
+		team := res.Teams[0].Team
 		for k, v := range tc.expectedAttributes {
-			val := reflect.ValueOf(league)
+			val := reflect.ValueOf(team)
 			field := val.FieldByName(k)
 			assert.True(field.IsValid())
 			assert.EqualValues(v, field.Interface())
@@ -91,24 +97,21 @@ func TestLeaguesOK(t *testing.T) {
 	}
 }
 
-func TestLeaguesValidationErrors(t *testing.T) {
-	tests := map[string]*api.LeaguesQueryParams{
+func TestTeamsValidationErrors(t *testing.T) {
+	tests := map[string]*api.TeamsInformationQueryParams{
 		"id negative":            {ID: ptr(-1)},
+		"league negative":        {League: ptr(-1)},
 		"name too short":         {Name: ptr("")},
 		"country too short":      {Country: ptr("")},
-		"code too short":         {Code: ptr("F")},
-		"code too long":          {Code: ptr("FRA")},
 		"season incorrect range": {Season: ptr(666)},
-		"team negative":          {Team: ptr(-1)},
 		"search too short":       {Search: ptr("FR")},
-		"last too big":           {Last: ptr(100)},
 	}
 
 	client := api.NewClient(api.SubTypeAPISports).WithCustomAPIURL("http://test.com")
 
 	for name, tc := range tests {
 		t.Run(name, func(t *testing.T) {
-			got, gotErr := client.Leagues(context.Background(), tc)
+			got, gotErr := client.TeamsInformation(context.Background(), tc)
 			if got != nil {
 				t.Fatalf("Expected result to be nil, got %v", got)
 			}
