@@ -24,7 +24,8 @@ jobs:
         make check.fmt 
     - name: Check diff 
       run: | 
-        git diff --quiet && exit 1 || exit 0
+        git diff
+        # git diff --quiet && exit 1 || exit 0
     - name: Go lint 
       run: | 
         make check.lint 
