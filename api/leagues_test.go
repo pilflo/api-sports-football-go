@@ -13,23 +13,44 @@ import (
 )
 
 type leaguesTestCase struct {
-	params          *api.LeaguesQueryParams
-	jsonFilePath    string
-	responseCode    int
-	expectedResults int
+	params             *api.LeaguesQueryParams
+	jsonFilePath       string
+	responseCode       int
+	expectedResults    int
+	expectedAttributes map[string]any
 }
 
 func TestLeaguesOK(t *testing.T) {
 	assert := assert.New(t)
 
 	tests := map[string]leaguesTestCase{
-		"team=33,season=2021": {
+		"leagues,country=france": {
 			params: &api.LeaguesQueryParams{
-				Country: ptr("FR"),
+				Country: ptr("france"),
 			},
 			jsonFilePath:    "./test_files/leagues_fr.json",
 			responseCode:    http.StatusOK,
 			expectedResults: 23,
+			expectedAttributes: map[string]any{
+				"ID":   61,
+				"Name": "Ligue 1",
+				"Type": "League",
+				"Logo": "https://media.api-sports.io/football/leagues/61.png",
+			},
+		},
+		"leagues,id=39": {
+			params: &api.LeaguesQueryParams{
+				Country: ptr("france"),
+			},
+			jsonFilePath:    "./test_files/leagues_id_39.json",
+			responseCode:    http.StatusOK,
+			expectedResults: 1,
+			expectedAttributes: map[string]any{
+				"ID":   39,
+				"Name": "Premier League",
+				"Type": "League",
+				"Logo": "https://media-4.api-sports.io/football/leagues/39.png",
+			},
 		},
 	}
 	server := mockserver.GetServer()
@@ -55,6 +76,13 @@ func TestLeaguesOK(t *testing.T) {
 		assert.Nil(err)
 		assert.NotNil(res)
 		assert.Len(res.Leagues, tc.expectedResults)
+		league := res.Leagues[0].LeagueInfo
+		for k, v := range tc.expectedAttributes {
+			val := reflect.ValueOf(league)
+			field := val.FieldByName(k)
+			assert.True(field.IsValid())
+			assert.EqualValues(v, field.Interface())
+		}
 	}
 }
 

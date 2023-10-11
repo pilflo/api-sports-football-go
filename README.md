@@ -66,7 +66,7 @@ make check
 |--|--
 | /timezone | ❌
 | /countries | ✅
-| /leagues | ❌
+| /leagues | ✅
 | /leagues/seasons | ❌
 | /teams | ❌
 | /teams/statistics | ❌

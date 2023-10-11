@@ -24,7 +24,7 @@ type fixturesTestCase struct {
 func TestFixturesOK(t *testing.T) {
 	assert := assert.New(t)
 	tests := map[string]fixturesTestCase{
-		"team=33,season=2021": {
+		"fixtures,team=33,season=2021": {
 			params: &api.FixturesQueryParams{
 				Team:   ptr(33),
 				Season: ptr(2021),
@@ -33,7 +33,7 @@ func TestFixturesOK(t *testing.T) {
 			responseCode:    http.StatusOK,
 			expectedResults: 54,
 		},
-		"team=37,season=2023": {
+		"fixtures,team=37,season=2023": {
 			params: &api.FixturesQueryParams{
 				Team:   ptr(37),
 				Season: ptr(2023),
